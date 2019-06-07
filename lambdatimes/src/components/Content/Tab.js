@@ -2,16 +2,14 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
+import { TabDiv, ActiveTab } from '../StyledComponents/StyledComponents';
+
 const Tab = props => {
   return (
-    <div
-      className={`tab ${props.tab === props.selectedTab && 'active-tab'}`}
-      onClick={() => {
-        {props.selectTabHandler(props.tab)}
-      }}
-    >
-      {props.tab.toUpperCase()}
-    </div>
+    props.tab === props.selectedTab ?
+    <ActiveTab onClick={() => { {props.selectTabHandler(props.tab)} }} >{props.tab.toUpperCase()}</ActiveTab>
+    :
+    <TabDiv onClick={() => { {props.selectTabHandler(props.tab)} }} >{props.tab.toUpperCase()}</TabDiv>
   );
 };
 

@@ -3,13 +3,15 @@ import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Content from './components/Content/Content';
 
+import { AppDiv } from './components/StyledComponents/StyledComponents';
+
 const App = () => {
   return (
-    <div className="App">
+    <AppDiv>
       <TopBar />
       <Header />
       <Content />
-    </div>
+    </AppDiv>
   );
 }
 

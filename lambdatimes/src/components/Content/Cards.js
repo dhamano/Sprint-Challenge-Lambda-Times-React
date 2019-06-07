@@ -3,15 +3,17 @@ import Card from './Card';
 
 import PropTypes from 'prop-types';
 
+import { CardsDiv } from '../StyledComponents/StyledComponents';
+
 const Cards = props => {
   return (
-    <div className="cards-container">
+    <CardsDiv>
       {
         props.cards.map( (card, i) => {
           return <Card headline={card.headline} tab={card.tab} img={card.img} author={card.author} key={i} />
         })
       }
-    </div>
+    </CardsDiv>
   )
 }
 
