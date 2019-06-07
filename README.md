@@ -28,10 +28,19 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 ## Self-Study/Essay Questions
 
-- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
-- [ ] Describe a life-cycle event in React?
-- [ ] Explain the details of a Higher Order Component?
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+- [x] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+PropTypes are used to check the javascript type of the props being passed down to a component. It's important to type-check to cut down on risks of errors being made from sending a component the wrong type of data that it needs.
+
+- [x] Describe a life-cycle event in React?
+Render is an event that happens on the mounting and updating phase of the react lifecycles. It's where components are rendered when their props are changed but before the browser's DOM gets updated.
+
+- [x] Explain the details of a Higher Order Component?
+HOCs are a function that takes in a component and returns a new component so that components can share funcationality between themselves. This keeps code DRY.
+
+- [x] What are three different ways to style components in React? Explain some of the benefits of each.
+Plain CSS gives us a straight forward way to style components as in a regular site. We can use SCSS to render our CSS which will make it easier
+to maintain and update by keeping css compact and allowing us to separate them by component. Styled components allow us to create components that
+are styled and allows us to tie the css and the component closer together.
 
 ## Project Setup
 
