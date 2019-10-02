@@ -2,17 +2,19 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
+import { CardDiv, Headline, Author, ImgContainer, ArticleImg, Span } from '../StyledComponents/StyledComponents';
+
 const Card = props => {
   return (
-    <div className="card" data-tab={props.tab}>
-      <div className="headline">{props.headline}</div>
-      <div className="author">
-        <div className="img-container">
-          <img src={props.img} />
-        </div>
-        <span>By {props.author}</span>
-      </div>
-    </div>
+    <CardDiv data-tab={props.tab}>
+      <Headline>{props.headline}</Headline>
+      <Author>
+        <ImgContainer>
+          <ArticleImg src={props.img} />
+        </ImgContainer>
+        <Span>By {props.author}</Span>
+      </Author>
+    </CardDiv>
   );
 };
 
